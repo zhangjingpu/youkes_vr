@@ -23,7 +23,7 @@
 
 优分享开源开源软件:
 
-[优分享安卓APP](http://git.oschina.net/xumingwang/youkes_browser "优分享开源浏览器")
+[优分享浏览器安卓APP](http://git.oschina.net/xumingwang/youkes_browser "优分享开源浏览器")
 
 
 
