@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_fragment_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+    <com.youkes.vr.map.shop.view.ExpandTabView
+        android:id="@+id/expandtab_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+ <com.youkes.vr.widget.pullrefresh.PullRefreshAndLoadMoreListView
+    android:layout_below="@+id/expandtab_view"
+    android:id="@+id/item_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" />
+    </RelativeLayout>
+</FrameLayout>

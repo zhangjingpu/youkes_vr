@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youkes.vr.chat.ui.CCPMaskLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:id="@id/chatting_avatar_mask"
+                                     style="@style/ChattingUIAvatarMaskTo" >
+
+    <ImageView
+        android:id="@+id/chatting_avatar_iv"
+        style="@style/ChattingUIAvatarTo"
+        android:contentDescription="@string/avatar_desc"
+        android:scaleType="centerCrop"
+        android:focusable="false" />
+
+</com.youkes.vr.chat.ui.CCPMaskLayout>

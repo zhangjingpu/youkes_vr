@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffdddddd"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@color/gray_lighter"
+        android:visibility="gone"
+        android:weightSum="5" >
+        <RelativeLayout
+            android:id="@+id/undo_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_button_semitrans"
+            android:clickable="true" >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:text="@string/undo"
+                />
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/select_button_semitrans"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/redo_action"
+            android:clickable="true" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:text="@string/redo"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_action"
+            android:background="@drawable/select_button_semitrans"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:clickable="true" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:text="@string/add_text_node"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/save_action"
+            android:background="@drawable/select_button_semitrans"
+            android:clickable="true" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:text="@string/save"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:background="@drawable/select_button_semitrans"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/preview_action"
+            android:clickable="true" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:text="@string/preview"
+                />
+        </RelativeLayout>
+
+</LinearLayout>
+
+    <ScrollView
+        android:id="@id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@color/white"
+        android:orientation="vertical" >
+    </ScrollView>
+
+</RelativeLayout>

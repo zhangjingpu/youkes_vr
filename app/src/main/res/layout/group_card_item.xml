@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_card"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/card_item_tv"
+        style="@style/CCPFontTitleInList"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/NormalListHeight"
+        android:layout_weight="1.0"
+        android:background="@drawable/list_item_selector"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/address_history_group_card" />
+</LinearLayout>

@@ -1,0 +1,216 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:youkes="http://schemas.android.com/apk/res-auto"
+    style="@style/NavPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E3E3"
+    android:fadingEdge="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="0dip"
+        android:paddingRight="0dip" >
+
+        <LinearLayout
+            android:id="@+id/user_info_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/select_button"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/userName_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/userId_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/share_click"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="0dp"
+            youkes:item_showDivider="true"
+            android:visibility="gone"
+            youkes:item_titleText="@string/space" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/favorite_click"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="0dp"
+            youkes:item_showDivider="true"
+            android:visibility="gone"
+            youkes:item_titleText="@string/favorite" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/visit_record_click"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="0dp"
+            youkes:item_showDivider="true"
+            android:visibility="visible"
+            youkes:item_titleText="@string/recent_browse" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/photo_click"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="0dp"
+            youkes:item_showDivider="true"
+            android:visibility="gone"
+            youkes:item_titleText="@string/photo_album" />
+
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/topic_click"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="0dp"
+            android:visibility="gone"
+            youkes:item_showDivider="true"
+            youkes:item_titleText="@string/topic" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/down_click"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="0dp"
+            android:visibility="gone"
+            youkes:item_titleText="@string/download" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/down2_click"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="0dp"
+            android:visibility="gone"
+            youkes:item_titleText="下载2" />
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/pic_click"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="0dp"
+            android:visibility="gone"
+            youkes:item_titleText="@string/pic" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/news_click"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="0dp"
+            android:visibility="gone"
+            youkes:item_titleText="@string/news" />
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/activities_click"
+            android:layout_marginTop="16dp"
+            style="@style/settings_item_layout_single"
+            youkes:item_showDivider="true"
+            android:visibility="visible"
+            youkes:item_titleText="@string/activites" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/note_click"
+            android:layout_marginTop="0dp"
+            style="@style/settings_item_layout_single"
+            youkes:item_showDivider="true"
+            android:visibility="visible"
+            youkes:item_titleText="@string/article" />
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/cloud_disk_click"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="0dp"
+            youkes:item_showDivider="true"
+            android:visibility="visible"
+            youkes:item_titleText="@string/cloud_disk" />
+
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/footprint"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="0dp"
+            youkes:item_showDivider="true"
+            android:visibility="gone"
+            youkes:item_titleText="@string/footprint" />
+
+
+        <com.youkes.vr.ui.view.SettingItem
+
+            youkes:item_showDivider="true"
+            android:id="@+id/shop_click"
+            android:visibility="gone"
+            style="@style/settings_item_layout_single"
+            youkes:item_titleText="@string/same_city" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            youkes:item_showDivider="true"
+            android:id="@+id/travel_click"
+            android:visibility="gone"
+            style="@style/settings_item_layout_single"
+            youkes:item_titleText="@string/travel" />
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/phone_book_click"
+            style="@style/settings_item_layout_single"
+            youkes:item_showDivider="false"
+            android:layout_marginTop="18dp"
+            android:visibility="gone"
+            youkes:item_titleText="@string/phone_numbers" />
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/share_app_btn"
+            style="@style/settings_item_layout_single"
+            youkes:item_showDivider="false"
+            android:layout_marginTop="18dp"
+            youkes:item_titleText="@string/share_app" />
+
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/setting_click"
+            style="@style/settings_item_layout_single"
+            youkes:item_showDivider="false"
+            android:layout_marginTop="18dp"
+            youkes:item_titleText="@string/settings_switch_title" />
+
+    </LinearLayout>
+
+</ScrollView>

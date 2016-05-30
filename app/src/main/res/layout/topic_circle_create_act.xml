@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:form="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.youkes.vr.ui.CCPFormInputView
+         android:layout_margin="4dp"
+        android:id="@+id/text_edit"
+        style="@style/CCPFormInputView"
+        form:form_hint="@string/topic_circle_name"
+        form:form_layout="@layout/ccp_form_input_clear_et_view"
+        form:form_title="@string/topic_circle" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:maxHeight="240dp"
+        
+        android:scaleType="centerCrop" >
+    </ImageView>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:form="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:layout_marginTop="12dp"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingBottom="4dip"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="8dip" >
+
+    <com.youkes.vr.ui.CCPFormInputView
+        android:id="@+id/album_name_text"
+        style="@style/CCPFormInputView"
+        form:form_hint="@string/album_name_prompt_hint"
+        form:form_layout="@layout/ccp_form_input_clear_et_view"
+        form:form_title="@string/album_name_prompt" />
+
+</LinearLayout>

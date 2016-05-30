@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/dialog_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="0dip"
+        android:paddingRight="0dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingLeft="25dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0dp"
+                android:gravity="left"
+                android:text="@string/gender"
+                android:textColor="@color/green"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="0dip"
+            android:paddingRight="0dip" >
+
+            <LinearLayout
+                android:id="@+id/male_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_button"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="15dip"
+                android:paddingLeft="25dip"
+                android:paddingTop="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/male"
+                    android:textColor="@color/black"
+                    android:textSize="15dip" />
+
+                <CheckBox
+                    android:id="@+id/cb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:gravity="center_vertical|right"
+                    android:text="" >
+                </CheckBox>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/lightgray" />
+
+            <LinearLayout
+                android:id="@+id/female_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_button"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="15dip"
+                android:paddingLeft="25dip"
+                android:paddingTop="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/female"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:gravity="center_vertical|right"
+                    android:text="" >
+                </CheckBox>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

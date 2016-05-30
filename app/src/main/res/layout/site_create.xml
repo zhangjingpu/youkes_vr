@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="#eee"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_name"
+
+       android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/desc_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:background="#eee"
+                android:gravity="top"
+                android:hint="@string/hint_desc"
+                android:minHeight="120dp"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+    <ImageView
+
+        android:id="@+id/img_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:maxHeight="1200dp"
+        android:scaleType="fitCenter" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:youkes="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee"
+        android:orientation="vertical" >
+
+
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:layout_marginTop="16dp"
+            android:id="@+id/movie_click"
+            style="@style/settings_item_layout_single"
+            youkes:item_showDivider="true"
+
+            youkes:item_titleText="@string/movie" />
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/book_click"
+            style="@style/settings_item_layout_single"
+            youkes:item_showDivider="true"
+
+            youkes:item_titleText="@string/book" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:layout_marginTop="16dp"
+            youkes:item_showDivider="true"
+            android:id="@+id/shop_click"
+            style="@style/settings_item_layout_single"
+            youkes:item_titleText="@string/same_city" />
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/travel_click"
+            style="@style/settings_item_layout_single"
+            youkes:item_showDivider="true"
+            youkes:item_titleText="@string/travel" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            youkes:item_showDivider="false"
+            android:id="@+id/campus_click"
+            style="@style/settings_item_layout_single"
+            youkes:item_titleText="@string/campus" />
+
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:layout_marginTop="16dp"
+            youkes:item_showDivider="true"
+            android:id="@+id/site_click"
+            style="@style/settings_item_layout_single"
+            youkes:item_titleText="@string/site" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:layout_marginTop="16dp"
+            youkes:item_showDivider="false"
+            android:id="@+id/goods_click"
+            style="@style/settings_item_layout_single"
+            youkes:item_titleText="@string/goods" />
+
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

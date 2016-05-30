@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_detail_desc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:padding="8dip" >
+
+                <ImageView
+                    android:id="@+id/book_detail_img_view"
+                    android:layout_width="120dp"
+                    android:layout_height="160dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:padding="2dip" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:padding="2dip" >
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/props_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:textColor="@color/gray_light"
+                android:textSize="16sp" />
+            
+            
+            <TextView
+                android:id="@+id/book_detail_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:textColor="@color/gray_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

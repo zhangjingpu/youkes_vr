@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.youkes.vr.widget.swipegridview.SwipeGridView
+            android:id="@+id/listview"
+            android:numColumns="2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="false"
+            android:scrollbarSize="@dimen/listview_scrollbar_width"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            swipe:swipeBackView="@+id/back"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeDrawableChecked="@drawable/choice_selected"
+            swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+            swipe:swipeFrontView="@+id/front"
+            swipe:swipeIsAutoLoadOnBottom="true"
+            swipe:swipeIsDropDownStyle="false"
+            swipe:swipeIsOnBottomStyle="true"
+            swipe:swipeMode="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="16dip"
+        android:layout_height="16dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/common_loading4"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.youkes.vr.ui.view.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/ui_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/shortcut_toolbar"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_lighter"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:background="@color/gray_lighter"
+                android:weightSum="5" >
+
+                <RelativeLayout
+                    android:id="@+id/hide_post_action"
+                    android:layout_width="64sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_button_semitrans"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:id="@+id/hide_post_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_dark"
+                        android:text="@string/hide_post"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/hide_layer_action"
+                    android:layout_width="64sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_button_semitrans"
+                    android:clickable="true" >
+                    <TextView
+                        android:id="@+id/hide_layer_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_dark"
+                        android:text="@string/hide_circle"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="@drawable/select_button_semitrans"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="64sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/nearby_post"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_dark"
+                        android:text="@string/geoarea_activities"
+                        />
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="64sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/nearby_circle"
+                    android:background="@drawable/select_button_semitrans"
+                    android:clickable="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_dark"
+                        android:text="@string/geoarea_circle"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="64sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/friend_position"
+                    android:background="@drawable/select_button_semitrans"
+                    android:clickable="true" >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_dark"
+                        android:text="@string/position_friend"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#ffdddddd" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <FrameLayout android:id="@+id/browser_views"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/fullscreen_cancel"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/black"
+                    android:text="@string/fullscreen_cancel"
+                    android:background="@drawable/select_button_gray"
+                    android:layout_width="54dp"
+                    android:layout_height="36dp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+
+
+        <include layout="@layout/search_interface" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+
+
+    </RelativeLayout>
+</LinearLayout>

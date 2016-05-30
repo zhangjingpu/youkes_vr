@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/book_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:padding="4dip" >
+
+                    <ImageView
+                        android:id="@+id/icon_img"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:padding="2dip" >
+
+                        <TextView
+                            android:id="@+id/title_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dip"
+                            android:text=""
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/props_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dip"
+                            android:textColor="@color/black"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_height="300dp">
+                    <LinearLayout
+                        android:id="@+id/images_view"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dip"
+                    android:textColor="@color/black"
+                    android:text="@string/detail"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/detail_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dip"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/gray_lighter"
+            android:layout_height="wrap_content">
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/fav"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/download_btn"
+                style="@style/CCPBigGreenButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="0.8"
+                android:layout_marginRight="5dp"
+                android:text="@string/download"
+                android:textSize="12sp"
+                android:onClick="link_click"/>
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:visibility="gone"
+                android:text="@string/share"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

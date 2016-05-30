@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="2dp">
+
+    <EditText
+        android:id="@+id/text_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="#eee"
+        android:gravity="top"
+        android:hint="@string/hint_moment_think"
+        android:minHeight="120dp"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/white_light"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/urlTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="@string/empty"
+            android:textColor="@color/gray_dark"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="@string/empty"
+            android:textColor="@color/gray_dark"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/webviewimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="4.0dip"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/empty"
+        android:maxHeight="240dp" />
+
+    <Button
+        android:id="@+id/add_tags_btn"
+        style="@style/CCPBigGreenButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/tags_add"
+        android:textSize="12sp" />
+
+    <com.youkes.vr.ui.view.TagsView
+        android:id="@+id/tags_list"
+        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.youkes.vr.ui.view.TagsView>
+
+</LinearLayout>

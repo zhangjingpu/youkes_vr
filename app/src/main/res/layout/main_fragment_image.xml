@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_fragment_image"
+    android:layout_width="match_parent"
+    android:background="@drawable/pic_background"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+    <com.youkes.vr.widget.waterfall.view.XListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:fastScrollEnabled="true"
+        android:scrollbars="vertical" />
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:singleLine="false"
+        android:text="@string/main_empty_result"
+        android:visibility="gone" />
+    </RelativeLayout>
+</FrameLayout>

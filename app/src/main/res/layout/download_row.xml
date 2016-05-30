@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.9"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/DownloadRow.FileName"
+                style="@style/History.Title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@+id/DownloadRow.FileName" />
+
+            <TextView
+                android:id="@+id/DownloadRow.Url"
+                style="@style/History.Url"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@+id/DownloadRow.Url" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/DownloadRow.StopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_btn_stop"
+            android:visibility="gone" >
+        </ImageButton>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/DownloadRow.ProgressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2dip"
+        android:indeterminate="false" >
+    </ProgressBar>
+
+</LinearLayout>

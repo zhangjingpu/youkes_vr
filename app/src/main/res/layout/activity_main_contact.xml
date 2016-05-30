@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_load_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取所有联系人" />
+
+    <Button
+        android:id="@+id/btn_get_recent_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取通话记录" />
+
+    <Button
+        android:id="@+id/btn_get_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取短信记录" />
+
+</LinearLayout>

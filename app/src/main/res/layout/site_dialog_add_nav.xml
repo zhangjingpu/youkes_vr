@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:form="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:background="@color/devideline_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px" />
+
+    <com.youkes.vr.ui.CCPFormInputView
+        android:layout_margin="6dp"
+        android:id="@+id/nav_name"
+        style="@style/CCPFormInputView"
+        form:form_hint="@string/prompt_site_nav_hint"
+        form:form_layout="@layout/ccp_form_input_clear_et_view"
+        form:form_title="@string/prompt_site_nav" />
+
+
+
+</LinearLayout>

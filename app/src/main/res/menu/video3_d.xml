@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/show_default"
+        android:title="@string/show_default"
+
+        android:showAsAction="never"
+        />
+    
+    <item
+        android:id="@+id/show_randspin"
+        android:title="@string/show_randspin"
+
+        android:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/show_touch"
+        android:title="@string/show_touch"
+
+        android:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/select_file"
+        android:title="@string/select_file"
+
+        android:showAsAction="never"
+        />
+
+</menu>

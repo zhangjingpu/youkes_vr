@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+ 
+    
+    
+    
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+           
+
+		
+    
+    <RelativeLayout 
+        android:id="@+id/searchbox_layout"
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:layout_below="@+id/title_layout"
+  			android:background="@color/gray_light"
+  			android:gravity="center_vertical"  > 
+  			  
+      		 <EditText 
+	    android:id="@+id/search_box"
+	    
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	   
+	    android:textColor="#000"
+	    android:textSize="18sp"
+	    android:layout_marginTop="2dp"
+	    android:layout_marginLeft="8dp"
+	    android:layout_marginRight="2dp"
+	    android:layout_toLeftOf="@+id/btn_search"
+	    android:singleLine="true"
+	    android:hint="@string/hint_search_article"/>
+    
+       <Button
+	        android:id="@+id/btn_search"
+	        android:layout_width="66dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	       android:layout_marginRight="8dp"
+	        android:text="@string/search"
+	        
+	        
+	        android:textSize="18sp"
+	        android:onClick="onSearchClick"
+	        />
+       
+       
+			
+		</RelativeLayout>
+		
+    
+    <FrameLayout 
+    android:id="@+id/container"
+    android:layout_below="@+id/searchbox_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+       
+        <ProgressBar
+                android:id="@+id/refresh_list_footer_progressbar"
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dip"
+                android:indeterminate="true"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/common_loading4" />
+        
+       </FrameLayout>
+    
+    
+    </RelativeLayout>
+    
+    </FrameLayout>
+

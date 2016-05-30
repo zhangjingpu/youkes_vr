@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:gravity="center_vertical"
+    android:paddingBottom="2dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:onClick="onShareClick"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="分享"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:background="#222222"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="群组"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:onClick="onFriendClick"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="朋友"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:onClick="onMeClick"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:onClick="onMeClick"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    
+    
+</LinearLayout>

@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/searchbox_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/title_layout"
+                android:background="@color/gray_light"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/search_box"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toLeftOf="@+id/btn_search"
+                    android:drawableLeft="@drawable/search_bar_icon_normal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/hint_search"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:focusable="false"
+                    android:onClick="onSearchClick"
+                    android:text="@string/search"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

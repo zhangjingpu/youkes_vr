@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        style="@style/NavPage"
+        android:background="@color/white"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical" >
+
+
+        <FrameLayout
+            android:id="@+id/chatting_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.youkes.vr.widget.swipelistview.SwipeListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="1px"
+                    android:footerDividersEnabled="false"
+                    android:scrollbarSize="@dimen/listview_scrollbar_width"
+                    android:scrollbarThumbVertical="@drawable/scrollbar"
+                    swipe:swipeBackView="@+id/back"
+                    swipe:swipeCloseAllItemsWhenMoveList="true"
+                    swipe:swipeDrawableChecked="@drawable/choice_selected"
+                    swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+                    swipe:swipeFrontView="@+id/front"
+                    swipe:swipeIsAutoLoadOnBottom="true"
+                    swipe:swipeIsDropDownStyle="false"
+                    swipe:swipeIsOnBottomStyle="true"
+                    swipe:swipeMode="none" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/inputBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:visibility="gone" >
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <include layout="@layout/tab_loading_area" />
+
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:singleLine="false"
+        android:text="@string/main_empty_result"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavPage"
+    xmlns:youkes="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:background="#eee"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dip"
+        android:background="#eee"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white_light"
+            android:paddingTop="10dip" >
+
+            <ImageView
+                android:id="@+id/desc"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/empty" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:paddingTop="20dp" >
+
+                <com.youkes.vr.ui.emoji.EmojiconTextView
+                    android:id="@+id/contact_nameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="16dp"
+                    android:singleLine="true"
+                    
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/contact_numer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/entrance_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/LargePadding"
+            android:layout_marginRight="@dimen/LargePadding"
+            android:layout_marginTop="@dimen/LargestPadding"
+            style="@style/CCPBigGreenButton"
+            android:gravity="center"
+            android:textSize="18.0dip"
+            android:text="@string/entrance_chat_tips"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/video_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/LargePadding"
+            android:layout_marginRight="@dimen/LargePadding"
+            android:layout_marginTop="4dp"
+            style="@style/CCPBigWhiteButton"
+            android:gravity="center"
+            android:textSize="18.0dip"
+            android:text="@string/chat_video"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/voice_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/LargePadding"
+            android:layout_marginRight="@dimen/LargePadding"
+            android:layout_marginTop="4dp"
+            style="@style/CCPBigGreenButton"
+            android:gravity="center"
+            android:textSize="18.0dip"
+            android:text="@string/chat_voice"
+            android:textColor="@android:color/white" />
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee"
+        android:orientation="vertical" >
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/circle_click"
+            style="@style/settings_item_layout_single"
+            android:layout_marginTop="16dp"
+            youkes:item_showDivider="false"
+            android:visibility="visible"
+            youkes:item_titleText="@string/user_activities" />
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:visibility="gone"
+            android:id="@+id/topic_click"
+            style="@style/settings_item_layout_single"
+            youkes:item_showDivider="true"
+            youkes:item_titleText="@string/topic" />
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:id="@+id/pub_click"
+
+            youkes:item_showDivider="true"
+            android:visibility="gone"
+            style="@style/settings_item_layout_single"
+            youkes:item_titleText="@string/pubnumber" />
+
+
+        <com.youkes.vr.ui.view.SettingItem
+            android:visibility="gone"
+            android:id="@+id/pic_click"
+            style="@style/settings_item_layout_single"
+            youkes:item_showDivider="false"
+            youkes:item_titleText="@string/pic" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

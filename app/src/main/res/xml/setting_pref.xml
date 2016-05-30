@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="@string/setting_voe">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/setting_voe_call_proximity_key"
+            android:title="@string/setting_voe_call_proximity"
+            android:summary="在语音通话时开启距离传感器"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_vie">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/setting_vie_crop_key"
+            android:title="@string/setting_vie_crop"
+            android:summary="在双人通话时按照对方屏幕比例裁剪画面"/>
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/setting_vie_rotation_key"
+            android:title="@string/setting_vie_rotation"
+            android:summary="通话时参考自己和对方设备角度旋转画面"/>
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/setting_vie_default_front_camera_key"
+            android:title="@string/setting_vie_default_front_camera"
+            android:summary="在视频通话时优先采用前置摄像头"/>
+
+        <ListPreference
+            android:defaultValue="0"
+            android:key="@string/setting_vie_quality_key"
+            android:title="@string/setting_vie_quality"
+            android:entries="@array/setting_vie_quality_entries"
+            android:entryValues="@array/setting_vie_quality_values" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/setting_other">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/setting_other_server_record_audio_key"
+            android:title="@string/setting_other_server_record_audio"
+            android:summary="在服务器录制通话内容(需要额外配置)"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/setting_other_server_record_video_key"
+            android:title="@string/setting_other_server_record_video"
+            android:summary="在服务器录制通话内容(需要额外配置)"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

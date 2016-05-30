@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:weightSum="1">
+    <SurfaceView android:layout_height="220dip"
+        android:layout_gravity="center" android:id="@+id/surface" android:layout_weight="0.25"
+        android:layout_width="320dip"></SurfaceView>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <Button android:text="播放" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        <Button android:text="暂停" android:id="@+id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        <Button android:text="停止" android:id="@+id/button3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+</LinearLayout>

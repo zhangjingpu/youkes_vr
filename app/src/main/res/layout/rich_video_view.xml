@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/gray_lighter"
+    android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/video_img"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:layout_height="200dp" />
+    <TextView
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:background="@color/semitransparent_light"
+        android:text="@string/video"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/video_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:background="#22222222"
+        android:contentDescription="@string/play_ptt"
+        android:gravity="center"
+        android:src="@drawable/mediacontroller_play_button" />
+</RelativeLayout>

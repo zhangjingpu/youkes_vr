@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/gray_lighter"
+    android:orientation="horizontal" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#ffdddddd"
+        android:orientation="horizontal" >
+
+
+    <ImageView
+        android:id="@+id/video_img"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+
+        android:clickable="true"
+        android:layout_height="200dp" />
+    <TextView
+
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:background="@color/semitransparent_light"
+        android:text="@string/video"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/video_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:background="#00000000"
+        android:contentDescription="@string/play_ptt"
+        android:gravity="center"
+        android:src="@drawable/mediacontroller_play_button" />
+
+    <FrameLayout
+        android:layout_alignParentRight="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#ffdddddd"
+        android:minWidth="@dimen/btn_topbar_layout_minwidth" >
+
+        <ImageView
+
+            android:id="@+id/close_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/close5"
+            android:background="#ffdddddd" />
+    </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

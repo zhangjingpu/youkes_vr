@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/id_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="1dp"
+         android:layout_marginLeft="4dp"
+         android:layout_marginRight="4dp"
+        android:background="@color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipChildren="true"
+        android:gravity="center"
+        android:horizontalSpacing="3dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dip" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/id_bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#e0000000"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/id_choose_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="所有图片"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/id_total_count"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="0张"
+            android:textSize="14sp"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

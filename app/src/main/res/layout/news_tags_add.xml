@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:form="http://schemas.android.com/apk/res-auto"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingBottom="4dip"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="2dip" >
+
+    <com.youkes.vr.ui.view.TagsView
+        android:id="@+id/tags_list"
+        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.youkes.vr.ui.view.TagsView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+         >
+
+    <com.youkes.vr.ui.CCPFormInputView
+        android:id="@+id/album_name_text"
+        android:layout_width="match_parent"
+        android:layout_marginRight="64dp"
+        android:layout_height="wrap_content"
+        form:form_hint="@string/tags_name_prompt_hint"
+        form:form_layout="@layout/ccp_form_input_clear_et_view"
+        form:form_title="@string/tags_name_prompt" />
+
+
+        <TextView
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:layout_gravity="right|center"
+            android:text="@string/add"
+            android:clickable="true"
+
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:minWidth="@dimen/btn_topbar_minwidth"
+            android:minHeight="@dimen/SmallButtonHeight"
+            android:shadowDy="2.0"
+            android:textColor="@color/common_top_bar_right_string_color"
+            android:textSize="@dimen/size_small"
+            />
+
+</RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_marginTop="8dp"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.youkes.vr.widget.swipelistview.SwipeListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="false"
+            android:scrollbarSize="@dimen/listview_scrollbar_width"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            swipe:swipeBackView="@+id/back"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeDrawableChecked="@drawable/choice_selected"
+            swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+            swipe:swipeFrontView="@+id/front"
+            swipe:swipeIsAutoLoadOnBottom="true"
+            swipe:swipeIsDropDownStyle="false"
+            swipe:swipeIsOnBottomStyle="true"
+            swipe:swipeMode="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

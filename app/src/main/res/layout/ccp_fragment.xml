@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youkes.vr.ui.CCPLayoutListenerView xmlns:android="http://schemas.android.com/apk/res/android"
+                                        android:id="@+id/mm_base_view"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:background="@color/transparent"
+                                        android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_top_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="24.0dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ccp_root_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" />
+
+</com.youkes.vr.ui.CCPLayoutListenerView>

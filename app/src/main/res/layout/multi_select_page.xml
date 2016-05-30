@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical" >
+
+  
+     <RelativeLayout
+    android:id="@+id/layout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >  
+    
+    <RelativeLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        
+        >             
+      
+        
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            
+            android:paddingBottom="2dp"            
+        	>
+        	
+            
+        	 
+        	
+          <Button
+            	android:layout_width="wrap_content"
+            	android:layout_height="55dp"
+              	
+              	android:layout_margin="2dp"
+              	
+              	android:text="@string/cancel"
+            		
+            		
+            		android:textSize="12sp"
+              	android:onClick="onFilterCancel"
+              	android:layout_weight="1">               	
+                </Button>
+        	 
+          
+        	<Button
+            	android:layout_width="wrap_content"
+            	android:layout_height="55dp"
+              	
+              	android:layout_margin="2dp"
+              	
+              	android:clickable="true"
+              	android:text="@string/ok"
+            		
+            		
+            		android:textSize="12sp"
+              	android:onClick="onFilterOk"
+              	android:layout_weight="1">               	
+                </Button>
+                
+        	 
+        	
+        	 
+        </LinearLayout>     
+       
+    </RelativeLayout>
+    
+    <ScrollView
+    android:layout_above="@id/main_bottom"
+    android:layout_alignParentTop="true"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <LinearLayout
+    android:id="@+id/content_frame"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	
+    	       
+        android:orientation="vertical">
+         </LinearLayout>
+         
+    </ScrollView>
+         </RelativeLayout>
+ 
+
+</LinearLayout>

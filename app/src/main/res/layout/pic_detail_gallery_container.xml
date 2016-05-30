@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff171b19">
+
+    <com.youkes.vr.pic.detail.PicGalleryViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_marginBottom="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/imagebrower_layout_pagelayout"
+        android:background="#5e171b19"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:paddingTop="4.0dip"
+        android:paddingBottom="4.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/imagebrower_iv_save"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_topbar_save"
+            
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="#ffcdcdcd"
+            android:id="@+id/indicator"
+            android:text="1/1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

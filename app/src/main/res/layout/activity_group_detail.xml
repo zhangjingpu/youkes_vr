@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.youkes.vr.group.GroupActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/main_bottom"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/topbar_back_bt"
+                    android:onClick="onBackClick"
+                    android:text="@string/back"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/title_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/right_btn"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_style_green"
+                    
+                    android:text="@string/focus"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title_layout" />
+        </LinearLayout>
+
+        
+    </RelativeLayout>
+
+</FrameLayout>

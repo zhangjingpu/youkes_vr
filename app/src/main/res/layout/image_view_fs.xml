@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff171b19" >
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        android:background="@android:color/transparent" >
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+
+            android:background="@android:color/black"
+            android:orientation="horizontal"
+            >
+
+            <GridView
+                android:background="@color/semitransparent"
+                android:id="@+id/images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:clipChildren="true"
+                android:gravity="center"
+                android:horizontalSpacing="3dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="5"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dip" >
+            </GridView>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/imagebrower_layout_pagelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#5e171b19"
+            android:minHeight="64.0dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip" >
+
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:text="1KB"
+                android:textColor="#ffcdcdcd"
+                android:textSize="18.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                >
+                <TextView
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:text="1/1"
+                    android:textColor="#ffcdcdcd"
+                    android:textSize="18.0sp" />
+
+
+                <CheckBox
+                    android:id="@+id/image_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:visibility="visible" />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:visibility="gone"
+                    android:text="@string/select"
+                    android:textColor="#ffcdcdcd"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

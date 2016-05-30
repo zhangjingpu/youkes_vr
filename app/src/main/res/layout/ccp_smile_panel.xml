@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/smile_panel_whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/smiley_panel_display_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+         android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <com.youkes.vr.ui.CCPFlipper
+            android:id="@+id/smiley_panel_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center" />
+
+        <com.youkes.vr.ui.CCPDotView
+            android:id="@+id/smiley_panel_dot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

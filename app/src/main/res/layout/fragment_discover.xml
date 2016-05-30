@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:youkes="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:background="#eee"
+            android:orientation="vertical" >
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:id="@+id/circle_click"
+                style="@style/settings_item_layout_single"
+                android:layout_marginTop="16dp"
+                youkes:item_showDivider="true"
+                youkes:item_titleText="@string/friend_circle_real" />
+
+            <com.youkes.vr.ui.view.SettingItem
+
+                android:id="@+id/topic_click"
+                style="@style/settings_item_layout_single"
+                youkes:item_showDivider="true"
+                youkes:item_titleText="@string/hobby_circle" />
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:id="@+id/pub_click"
+                youkes:item_showDivider="true"
+                style="@style/settings_item_layout_single"
+                youkes:item_titleText="@string/pubnumber" />
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:id="@+id/browser_click"
+                youkes:item_showDivider="false"
+                style="@style/settings_item_layout_single"
+                youkes:item_titleText="@string/browser" />
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:layout_marginTop="16dp"
+                youkes:item_showDivider="false"
+                android:id="@+id/shop_click"
+                android:visibility="gone"
+                style="@style/settings_item_layout_single"
+                youkes:item_titleText="@string/same_city" />
+
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:layout_marginTop="16dp"
+                android:id="@+id/map_click"
+                youkes:item_showDivider="true"
+                android:visibility="visible"
+                style="@style/settings_item_layout_single"
+                youkes:item_titleText="@string/map" />
+
+
+            <com.youkes.vr.ui.view.SettingItem
+
+                android:id="@+id/appstore_click"
+                youkes:item_showDivider="true"
+                android:visibility="visible"
+                style="@style/settings_item_layout_single"
+                youkes:item_titleText="@string/appstore" />
+
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:id="@+id/creative_click"
+
+                style="@style/settings_item_layout_single"
+                youkes:item_showDivider="true"
+                android:visibility="visible"
+                youkes:item_titleText="@string/creative_read" />
+
+
+            <com.youkes.vr.ui.view.SettingItem
+
+                android:id="@+id/pic_click"
+                style="@style/settings_item_layout_single"
+                youkes:item_showDivider="true"
+                youkes:item_titleText="@string/pic" />
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:id="@+id/video_click"
+                style="@style/settings_item_layout_single"
+                youkes:item_showDivider="true"
+                android:visibility="visible"
+                youkes:item_titleText="@string/video" />
+
+
+
+
+
+
+
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:visibility="visible"
+                android:id="@+id/news_click"
+                style="@style/settings_item_layout_single"
+                youkes:item_showDivider="true"
+                youkes:item_titleText="@string/news" />
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:id="@+id/movie_click"
+                youkes:item_showDivider="true"
+                android:visibility="visible"
+                style="@style/settings_item_layout_single"
+                youkes:item_titleText="@string/movie" />
+
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:id="@+id/book_click"
+                android:visibility="visible"
+                youkes:item_showDivider="true"
+                style="@style/settings_item_layout_single"
+                youkes:item_titleText="@string/book" />
+
+
+
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:id="@+id/travel_click"
+                style="@style/settings_item_layout_single"
+                youkes:item_showDivider="true"
+                android:visibility="gone"
+                youkes:item_titleText="@string/travel" />
+
+            <com.youkes.vr.ui.view.SettingItem
+                youkes:item_showDivider="false"
+                android:visibility="gone"
+                android:id="@+id/campus_click"
+                style="@style/settings_item_layout_single"
+                youkes:item_titleText="@string/campus" />
+
+            <com.youkes.vr.ui.view.SettingItem
+                youkes:item_showDivider="true"
+                android:visibility="gone"
+                android:id="@+id/goods_click"
+                style="@style/settings_item_layout_single"
+                youkes:item_titleText="@string/goods" />
+
+
+            <com.youkes.vr.ui.view.SettingItem
+                android:visibility="gone"
+                android:id="@+id/more_click"
+                youkes:item_showDivider="false"
+                style="@style/settings_item_layout_single"
+                youkes:item_titleText="@string/more" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="16dp">
+         </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

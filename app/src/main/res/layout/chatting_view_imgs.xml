@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff171b19" >
+
+    <LinearLayout
+        android:id="@+id/link_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/select_button_trans_dark"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:padding="4dp" >
+
+        <TextView
+            android:id="@+id/link_title"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:singleLine="true" />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="120dp"
+        android:layout_below="@id/link_layout"
+        android:background="@android:color/transparent" >
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+
+            android:background="@android:color/black"
+            android:orientation="horizontal"
+            >
+
+            <GridView
+                android:id="@+id/images"
+                android:background="@color/semitransparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:clipChildren="true"
+                android:gravity="center"
+                android:horizontalSpacing="3dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="5"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dip" >
+            </GridView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+
+            android:background="#5e171b19"
+            android:orientation="horizontal"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip" >
+
+            <ImageView
+                android:id="@+id/btn_save"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:padding="8dp"
+
+
+                android:clickable="true"
+                android:src="@drawable/ic_topbar_save"
+                android:background="@drawable/select_button_trans_dark"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:id="@+id/indicator"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="1/1"
+                    android:textColor="#ffcdcdcd"
+                    android:textSize="18.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

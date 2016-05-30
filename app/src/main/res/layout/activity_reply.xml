@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/activity_toolbar"
+        android:layout_width="fill_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/reply_topic"
+            style="@style/CCPFontTitleInList"
+            android:padding="4dp"
+            android:layout_margin="2dp"
+            android:layout_width="0.0dip"
+            android:layout_height="32dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/select_button"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/reply_text" />
+
+        <View
+            android:background="#ffdddddd"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:id="@+id/reply_pic"
+            style="@style/CCPFontTitleInList"
+            android:padding="4dp"
+            android:layout_margin="2dp"
+            android:layout_width="0.0dip"
+            android:layout_height="32dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/select_button"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/reply_pic" />
+        <View
+            android:background="#ffdddddd"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:id="@+id/reply_article"
+            style="@style/CCPFontTitleInList"
+            android:padding="4dp"
+            android:layout_margin="2dp"
+            android:layout_width="0.0dip"
+            android:layout_height="32dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/select_button"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/reply_article" />
+
+
+
+
+    </LinearLayout>
+    <View
+        android:background="#ffdddddd"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></View>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/white">
+
+    </FrameLayout>
+</LinearLayout>

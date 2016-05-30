@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/select_button"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="4dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="8dip" >
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edittext_bg_selector"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical|left"
+                android:hint="@string/album_name"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/select_button"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="4dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="8dip" >
+
+            <EditText
+                android:id="@+id/input_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edittext_bg_selector"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical|left"
+                android:hint="@string/album_desc"
+                android:maxLines="4"
+                android:singleLine="false"
+                android:text=""
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

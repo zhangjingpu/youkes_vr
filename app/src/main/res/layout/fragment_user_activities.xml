@@ -1,0 +1,338 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/shortcut_toolbar"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_lighter"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_lighter"
+             >
+
+            <RelativeLayout
+                android:id="@+id/post_text_action"
+                android:layout_width="48sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_button_semitrans"
+                android:clickable="true" >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_dark"
+                    android:text="@string/post_text"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/post_img_action"
+                android:layout_width="48sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_button_semitrans"
+                android:clickable="true" >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_dark"
+                    android:text="@string/post_img"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/post_video_action"
+                android:layout_width="48sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_button_semitrans"
+                android:clickable="true" >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_dark"
+                    android:text="@string/post_video"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@drawable/select_button_semitrans"
+                android:layout_alignParentBottom="true"
+                android:layout_width="48sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/post_article_action"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_dark"
+                    android:text="@string/post_article"
+                    />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+
+                android:layout_alignParentBottom="true"
+                android:layout_width="48sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/post_position_action"
+                android:background="@drawable/select_button_semitrans"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_dark"
+                    android:text="@string/post_position"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_alignParentBottom="true"
+                android:layout_width="64sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/create_circle_action"
+                android:background="@drawable/select_button_semitrans"
+                android:clickable="true" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_dark"
+                    android:text="@string/create_circle"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_alignParentBottom="true"
+                android:layout_width="64sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/create_channel_action"
+                android:background="@drawable/select_button_semitrans"
+                android:clickable="true" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_dark"
+                    android:text="@string/channel_add_video"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_width="48sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/search_guide"
+                android:background="@drawable/select_button_semitrans"
+                android:clickable="true" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_dark"
+                    android:text="@string/search_daohang"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ffdddddd" />
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:background="#fff3f3f3"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_column"
+                android:layout_width="0dp"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0" >
+
+                <com.youkes.vr.ui.ColumnHorizontalScrollView
+                    android:id="@+id/mColumnHorizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/mRadioGroup_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip" />
+                </com.youkes.vr.ui.ColumnHorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/shade_left"
+                    android:layout_width="10.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/channel_leftblock"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/shade_right"
+                    android:layout_width="10.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/channel_rightblock"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_more_columns"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip" >
+
+                <ImageView
+                    android:id="@+id/button_more_columns"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/channel_glide_day_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/category_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#ffdddddd" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+        <RelativeLayout
+
+            android:id="@+id/toast_conten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+

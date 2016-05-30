@@ -1,0 +1,203 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="0dip"
+        android:paddingRight="0dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/select_button"
+            android:clickable="true"
+            android:onClick="upload_photo_click"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="25dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/head_photo"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dp"
+                android:clickable="true"
+                android:onClick="photo_click"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:id="@+id/nick_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_button"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingLeft="25dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/nickname"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/userName_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dp"
+                android:gravity="right|center_vertical"
+                android:text="@string/fill_empty"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_button"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingLeft="25dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/youkes_number"
+                android:textColor="@color/black"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/userId_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dp"
+                android:gravity="right|center_vertical"
+                android:text="@string/fill_empty"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:id="@+id/gender_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_button"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingLeft="25dip"
+            android:paddingTop="15dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/gender"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/gender_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dp"
+                android:gravity="right|center_vertical"
+                android:text="@string/unknown"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:id="@+id/sign_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_button"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingLeft="25dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/sign"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sign_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dp"
+                android:gravity="right|center_vertical"
+                android:text="@string/fill_empty"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/searchBarContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <EditText
+            android:id="@+id/input_search_query"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:drawablePadding="5dp"
+            android:focusableInTouchMode="true"
+            android:hint="@string/youkes_number_search"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:visibility="gone"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dip"
+            android:layout_marginRight="8dp"
+            android:focusable="false"
+            android:onClick="onSearchClick"
+            android:text="@string/search"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/searchBarContainer"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

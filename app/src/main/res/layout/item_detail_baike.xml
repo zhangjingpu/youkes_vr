@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/book_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/control_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:padding="2dip" >
+
+               
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:padding="2dip" >
+
+                <ImageView
+                    android:id="@+id/book_detail_img_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:padding="2dip" >
+                    
+                     <TextView
+                android:id="@+id/props_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:textColor="@color/gray_light"
+                android:textSize="16sp" />
+                     
+                     
+                </LinearLayout>
+            </LinearLayout>
+			    
+            
+            <TextView
+                android:id="@+id/book_detail_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:textColor="@color/gray_light"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/par_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dip"
+                android:orientation="vertical" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

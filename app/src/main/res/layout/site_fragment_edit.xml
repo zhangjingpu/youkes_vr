@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@color/gray_lighter"
+        android:weightSum="5" >
+        <RelativeLayout
+            android:id="@+id/del_nav_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_button_semitrans"
+            android:clickable="true" >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:text="@string/del_nav"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/modify_nav_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_button_semitrans"
+            android:clickable="true" >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:text="@string/modify_name"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/select_button_semitrans"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/left_move_btn"
+            android:clickable="true" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:text="@string/left_move"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_move_btn"
+            android:background="@drawable/select_button_semitrans"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:clickable="true" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:text="@string/right_move"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/add_article_btn"
+            android:background="@drawable/select_button_semitrans"
+            android:clickable="true" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:text="@string/add_article"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.youkes.vr.widget.swipelistview.SwipeListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="false"
+            android:scrollbarSize="@dimen/listview_scrollbar_width"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            swipe:swipeBackView="@+id/back"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeDrawableChecked="@drawable/choice_selected"
+            swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+            swipe:swipeFrontView="@+id/front"
+            swipe:swipeIsAutoLoadOnBottom="true"
+            swipe:swipeIsDropDownStyle="false"
+            swipe:swipeIsOnBottomStyle="true"
+            swipe:swipeMode="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="#eee"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_name"
+
+       android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/desc_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:background="#eee"
+                android:gravity="top"
+                android:hint="@string/hint_desc"
+                android:minHeight="120dp"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+    <Spinner
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/spinner_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/creative_works_type"
+        android:visibility="visible"
+        android:prompt="@string/type" />
+
+
+    <Button
+        android:id="@+id/add_tags_btn"
+        style="@style/CCPBigGreenButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/tags_add"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/add_img_btn"
+        style="@style/CCPBigGreenButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/cover_set"
+        android:textSize="12sp" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:clickable="true"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter" />
+</LinearLayout>

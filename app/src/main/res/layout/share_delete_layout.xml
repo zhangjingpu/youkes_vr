@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200.0dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/dialog_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="0dip"
+        android:paddingRight="0dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingLeft="25dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0dp"
+                android:gravity="left"
+                android:text="@string/hint"
+                android:textColor="@color/green"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+           android:paddingLeft="8dp"
+           android:paddingRight="8dp"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="20dip"
+            android:paddingLeft="25dip"
+            android:paddingTop="20dip" >
+
+            <TextView
+                android:id="@+id/del_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0dp"
+                android:gravity="left"
+                android:text="@string/confirm_delete"
+                android:textColor="@color/black"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/cancel_click"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_button"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="15dip" />
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@color/lightgray" />
+
+            <TextView
+                android:id="@+id/confirm_click"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_button"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/black"
+                android:textSize="15dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/nav_bar"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/tab1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="32.0dip"
+                android:background="#fff3f3f3"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_column"
+                    android:layout_width="0dp"
+                    android:layout_height="32.0dip"
+                    android:layout_weight="1.0" >
+
+                    <com.youkes.vr.ui.ColumnHorizontalScrollView
+                        android:id="@+id/mColumnHorizontalScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.0dip"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/mRadioGroup_content"
+                            android:layout_width="fill_parent"
+                            android:layout_height="32.0dip"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10.0dip"
+                            android:paddingRight="10.0dip" />
+                    </com.youkes.vr.ui.ColumnHorizontalScrollView>
+
+                    <ImageView
+                        android:id="@+id/shade_left"
+                        android:layout_width="10.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/channel_leftblock"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/shade_right"
+                        android:layout_width="10.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/channel_rightblock"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_more_columns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32.0dip" >
+
+                    <ImageView
+                        android:id="@+id/button_more_columns"
+                        android:layout_width="32.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/channel_glide_day_bg" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/tab2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="32.0dip"
+                android:background="#fff3f3f3"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_column_1"
+                    android:layout_width="0dp"
+                    android:layout_height="32.0dip"
+                    android:layout_weight="1.0" >
+
+                    <com.youkes.vr.ui.ColumnHorizontalScrollView
+                        android:id="@+id/mColumnHorizontalScrollView_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.0dip"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/mRadioGroup_content_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="32.0dip"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10.0dip"
+                            android:paddingRight="10.0dip" />
+                    </com.youkes.vr.ui.ColumnHorizontalScrollView>
+
+                    <ImageView
+                        android:id="@+id/shade_left_1"
+                        android:layout_width="10.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/channel_leftblock"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/shade_right_1"
+                        android:layout_width="10.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/channel_rightblock"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_more_columns_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32.0dip" >
+
+                    <ImageView
+                        android:id="@+id/button_more_columns_1"
+                        android:layout_width="32.0dip"
+                        android:layout_height="32.0dip"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/channel_glide_day_bg" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.youkes.vr.widget.swipegridview.SwipeGridView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/transparent"
+                android:dividerHeight="1px"
+                android:background="#e5e5e5"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+
+                android:footerDividersEnabled="false"
+                android:numColumns="2"
+                android:scrollbarSize="@dimen/listview_scrollbar_width"
+                android:scrollbarThumbVertical="@drawable/scrollbar"
+                swipe:swipeBackView="@+id/back"
+                swipe:swipeCloseAllItemsWhenMoveList="true"
+                swipe:swipeDrawableChecked="@drawable/choice_selected"
+                swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+                swipe:swipeFrontView="@+id/front"
+                swipe:swipeIsAutoLoadOnBottom="true"
+                swipe:swipeIsDropDownStyle="false"
+                swipe:swipeIsOnBottomStyle="true"
+                swipe:swipeMode="none" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:singleLine="false"
+        android:text="@string/main_empty_result"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="16dip"
+        android:layout_height="16dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/common_loading4"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

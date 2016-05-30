@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="4dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/time_error"
+            android:textColor="@color/gray_dark2"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="12dip"
+            android:textColor="@color/gray_dark3"
+            android:singleLine="true"
+            android:text="@string/travel_note"
+        android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
