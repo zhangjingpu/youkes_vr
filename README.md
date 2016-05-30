@@ -2,7 +2,7 @@
 
 **优分享VR** 
 
-优分享VR是[优分享安卓APP](http://youkes.com/shareapp "优分享安卓APP")VR视频播放开源部分。感谢开源，本开源软件也借用了不少其他的开源代码。
+优分享VR是 [优分享安卓APP](http://youkes.com/shareapp "优分享安卓APP") VR视频播放开源部分。其它开源部分：[优分享开源浏览器](http://git.oschina.net/xumingwang/youkes_browser "优分享开源浏览器")
 
 优分享VR是基于[Google VR](https://github.com/googlevr/gvr-android-sdk "Google VR")开发的一款手机VR视频资源的聚合软件。由于google vr sdk现在出于初级阶段，所以本软件也不能完美的支持一些VR视频资源的播放，不过随着Google VR的发展，优分享也会与时俱进的支持更多的VR视频资源。
 
