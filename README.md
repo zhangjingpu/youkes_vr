@@ -21,9 +21,33 @@
 
 ![](http://youkesfile.oss-cn-qingdao.aliyuncs.com/upload/public/38531075f6162a799b2b0bc9782b2324d272d4b5)
 
-优分享开源开源软件:
+### 马上开始用源代码来生成安卓APP吧： ###
 
-[优分享浏览器安卓APP](http://git.oschina.net/xumingwang/youkes_browser "优分享开源浏览器")
+1.打开windows命令提示符
+
+2.创建项目目录
+
+mkdir youkes_vr
+
+3.进入项目根目录
+
+cd youkes_vr
+
+4.下载git，开始取Git库
+
+git clone https://git.oschina.net/xumingwang/youkes_vr.git
+
+4.下载android studio
+
+5.打开android studio，点击File->Open...
+
+6.填写刚刚取的Git库目录：如 C:\Users\xuming\youkes_vr\youkes_vr
+
+7.经过漫长的等待，您现在可以编译运行该安卓应用了。
+
+
+
+
 
 
 
