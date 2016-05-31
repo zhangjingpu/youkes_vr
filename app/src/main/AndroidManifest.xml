@@ -75,8 +75,8 @@
         android:largeHeap="true"
         android:theme="@style/AppTheme" >
 
-        <meta-data android:value="574baf78e0f55ac38c00092d" android:name="UMENG_APPKEY"/>
-        <meta-data android:value="youkes_video_qq" android:name="UMENG_CHANNEL"/>
+        <meta-data android:value="574d05cbe0f55a3f1000248e" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="youkes_vr" android:name="UMENG_CHANNEL"/>
 
 
         <activity
